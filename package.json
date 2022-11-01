@@ -1,0 +1,17 @@
+{
+  "name": "ballproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./main/output.css",
+    "watch": "tailwindcss -i ./input.css -o ./main/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "tailwindcss": "^3.2.1"
+  }
+}

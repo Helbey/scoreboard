@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./main/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-300">
+    <div class="bg-gray-200">
+      <div id="homeColor" class="w-1/2 bg-teal-300 h-screen float-left">
+        <h1 class="text-3xl text-white pt-52 text-center font-bold">HOME</h1>
+        <div class="bg-black w-20 h-16 mt-20 mx-auto">
+          <h1
+            class="text-red-300 pt-4 text-center text-4xl"
+            id="homeScore"
+          ></h1>
+        </div>
+        <div class="w-36 mx-auto pb-52 mt-16">
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="home1()"
+          >
+            +1
+          </button>
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="home2()"
+          >
+            +2
+          </button>
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="home3()"
+          >
+            +3
+          </button>
+        </div>
+        <h1 class="text-xl text-white pt-5 text-center font-bold">FOULS</h1>
+        <div class="bg-black w-12 h-12 mt-2 mx-auto">
+          <h1 class="text-red-300 pt-4 text-center text-xl" id="HomeFoul"></h1>
+        </div>
+        <div class="mx-auto text-center">
+          <button
+            class="rounded-lg items-center mt-2 text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="hfouls()"
+          >
+            +1
+          </button>
+        </div>
+      </div>
+      <div id="awayColor" class="w-1/2 bg-pink-600 h-screen float-right">
+        <h1 class="text-3xl text-white pt-52 text-center font-bold">GUEST</h1>
+        <div class="bg-black w-20 h-16 mt-20 mx-auto">
+          <h1
+            class="text-red-300 pt-4 text-center text-4xl"
+            id="GuestScore"
+          ></h1>
+        </div>
+        <div class="w-36 mx-auto mt-16 pb-52">
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="away1()"
+          >
+            +1
+          </button>
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="away2()"
+          >
+            +2
+          </button>
+          <button
+            class="rounded-lg text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="away3()"
+          >
+            +3
+          </button>
+        </div>
+        <h1 class="text-xl text-white pt-5 text-center font-bold">FOULS</h1>
+        <div class="bg-black w-12 h-12 mt-2 mx-auto">
+          <h1 class="text-red-300 pt-4 text-center text-xl" id="GuestFoul"></h1>
+        </div>
+        <div class="mx-auto text-center">
+          <button
+            class="rounded-lg items-center mt-2 text-blue-400 hover:bg-blue-600 bg-blue-200 px-3 py-2 font-bold"
+            onClick="afouls()"
+          >
+            +1
+          </button>
+        </div>
+
+        <button
+          class="text-xl bg-emerald-600 hover:bg-emerald-800 hover:text-white -ml-16 text-black font-light rounded-xl px-3 py-2"
+          onClick="newgame()"
+        >
+          New Game
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
